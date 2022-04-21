@@ -17,4 +17,7 @@ public class GetAllTagsVo {
 
     @NotBlank
     private Integer value;
+
+    @NotBlank
+    private String imgUrl;
 }

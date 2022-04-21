@@ -31,7 +31,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Articles> imp
         List<Articles> articles = articleMapper
                 .selectList(new LambdaQueryWrapper<Articles>()
                         .select(Articles::getId, Articles::getTitle, Articles::getUpdateTime, Articles::getTags,
-                                Articles::getHaveLike, Articles::getLikes, Articles::getBrief));
+                                Articles::getHaveLike, Articles::getLikes, Articles::getBrief, Articles::getImgUrl));
         articles.forEach(articles1 -> {
             GetAllArticleVo vo = new GetAllArticleVo();
             BeanUtils.copyProperties(articles1, vo);

@@ -20,4 +20,6 @@ public class Tags {
     private String color;
 
     private Integer value;
+
+    private String imgUrl;
 }

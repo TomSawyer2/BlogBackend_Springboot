@@ -31,4 +31,6 @@ public class GetAllArticleVo {
     @NotBlank
     private String likes;
 
+    @NotBlank
+    private String imgUrl;
 }

@@ -30,4 +30,6 @@ public class Articles {
     private String brief;
 
     private String haveLike;
+
+    private String imgUrl;
 }
